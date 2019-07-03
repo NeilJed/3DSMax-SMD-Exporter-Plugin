@@ -2,6 +2,13 @@
 
 ## Changelog
 
+### 1.7
+* Deprecated support for older 3DS Max versions.
+* Added support for Max 2017, 2018 & 2019
+* Re-written code for full Unicode support.
+* Added alternate UV channel export option and added to Maxscript interface.
+* Added native export of CAT parent, hub and bone objects in Max 2018 & 2019.
+
 ### 1.6
 * Fixed issues with GUI layout.
 * Added tool-tip help for export options.

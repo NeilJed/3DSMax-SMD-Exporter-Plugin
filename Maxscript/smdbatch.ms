@@ -6,7 +6,7 @@
 -- // Invoke the SMD exporter with the WBSMDExport() function and the following parameters.
 -- // Note that you must include all parameters with your function call.
 -- //
--- // WBSMDExport [strFilename] [bExportSelected] [nSMDType] [bHL1Format] [nStartFrame] [nEndFrame] [bReverseAnim] [bKeyFramesOnly] [bBookendKeys] [bSkipNonRenderable]
+-- // WBSMDExport [strFilename] [bExportSelected] [nSMDType] [bHL1Format] [nUVChannel] [nStartFrame] [nEndFrame] [bReverseAnim] [bKeyFramesOnly] [bBookendKeys] [bSkipNonRenderable]
 -- //
 -- // Paramters:
 -- //
@@ -14,6 +14,7 @@
 -- // [bExportSelected] should be true or false. Set this if you want to export only the selected objects.
 -- // [nSMDType] should be a number. Set for the type of SMD file you want to create. 0 = Reference, 1 = Sequence.
 -- // [bHL1Format] should be true or false. Set if you want to use HL1 format SMD files.
+-- // [nUVChannel] which UV Channel to use for the export
 -- // [nStartFrame] should be a number. The start frame of your animation sequence.
 -- // [nEndFrame] should be a number. The end frame of your animation squence.
 -- // [bReverseAnim] should be true or false. Use to export your animation sequence in reverse.
@@ -40,9 +41,9 @@ WBSMDExportVersionNum()
 
 -- // Export a reference SMD
 
-WBSMDExport "c:\myfiles\reference.smd" false 0 false 0 0 false false false false
+WBSMDExport "c:\myfiles\reference.smd" false 0 false 1 0 0 false false false false
 
 -- // Export a sequence SMD
 
-WBSMDExport "c:\myfiles\reference.smd" false 1 false 0 30 false false false false
+WBSMDExport "c:\myfiles\reference.smd" false 1 false 1 0 30 false false false false
 
