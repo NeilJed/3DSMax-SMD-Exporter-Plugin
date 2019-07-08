@@ -24,11 +24,12 @@ This plug-in allows 3D Studio Max to export SMD format files used primarily in H
 * 3DS Max 2017 - 64bit
 * 3DS Max 2018 - 64bit
 * 3DS Max 2019 - 64bit
+* 3DS Max 2020 - 64bit
 
 Older versions of 3DS Studio Max not shown in this list may be supported in previous releases.
 
 ## Installation
-Copy the `SMDExport.dle` file for the correct version for your edition of 3D Studio Max into your 3DS Max plug-ins folder (i.e. `C:\Program Files\Autodesk\3ds Max 2020\Plugins`) and re-start. You can check it's loaded via the Plug-ins Manager.
+Copy the `SMDExport.dle` file for the correct version for your edition of 3D Studio Max into your 3DS Max plug-ins folder (i.e. `C:\Program Files\Autodesk\3ds Max 2020\Plugins`) and re-start. You can check its loaded via the Plug-ins Manager.
 
 ## Basic usage
 Once installed, using the *Export* option of the File menu you should find *Source SMD* as an option. You can use regular *Export* which will export everything visible in the scene or *Export Selected* to only export selected items.
